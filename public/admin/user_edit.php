@@ -3,7 +3,7 @@ session_start();
 
 // Solo admin puede acceder
 if (!isset($_SESSION['user']) || strtolower($_SESSION['user']['role']) !== 'admin') {
-    header("Location: /tienda-zapatillas/public/login.php");
+    header("Location: /public/login.php");
     exit();
 }
 

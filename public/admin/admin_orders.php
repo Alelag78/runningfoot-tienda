@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION['user']) || $_SESSION['user']['role'] !== 'admin') {
-    header("Location: /tienda-zapatillas/public/login.php");
+    header("Location: /public/login.php");
     exit();
 }
 
